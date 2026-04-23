@@ -1,0 +1,18 @@
+EX03
+
+#include <stdio.h>
+
+int potencia(int base, int expoente) {
+    // caso base
+    if (expoente == 0) {
+        return 1;
+    }
+    
+    // passo recursivo
+    return base * potencia(base, expoente - 1);
+}
+
+int main() {
+    printf("%d\n", potencia(2, 3)); // imprime 8
+    return 0;
+}

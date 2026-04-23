@@ -1,0 +1,17 @@
+EX02
+
+#include <stdio.h>
+
+int somar(int n) {
+    // caso base
+    if (n <= 1) {
+        return n;
+    }
+    // passo recursivo
+    return n + somar(n - 1);
+}
+
+int main() {
+    printf("%d\n", somar(5)); // imprime 15
+    return 0;
+}
